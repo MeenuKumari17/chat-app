@@ -4,12 +4,12 @@ const Detail = () => {
   return (
     <div className="detail">
       <div className="user">
-        <img src="'./avatar.png" alt="" />
+        <img src="./avatar.png" alt="" />
         <h2>John Deo</h2>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div className="info">
-        <div className="option">
+      <div className="option">
           <div className="title">
             <span>Chat Setting</span>
             <img src="./arrowUp.png" alt="" />
@@ -17,7 +17,7 @@ const Detail = () => {
         </div>
         <div className="option">
           <div className="title">
-            <span>Privacy % help</span>
+            <span>Privacy & help</span>
             <img src="./arrowUp.png" alt="" />
           </div>
         </div>
@@ -32,7 +32,14 @@ const Detail = () => {
               <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="" />
               <span>photo_2024_2.png</span>
               </div>
-              <img src="./download.png" alt="" />
+              <img src="./download.png" className="icon" alt="" />
+            </div>
+            <div className="photoItem">
+              <div className="photoDetail">
+              <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="" />
+              <span>photo_2024_2.png</span>
+              </div>
+              <img src="./download.png" className="icon" alt="" />
             </div>
           </div>
         </div>
@@ -42,7 +49,8 @@ const Detail = () => {
             <img src="./arrowUp.png" alt="" />
           </div>
         </div>
-        <button>Block User</button>
+      <button>Block User</button>
+      <button className="logout">Logout</button>
       </div>
     </div>
   )
